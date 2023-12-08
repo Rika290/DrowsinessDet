@@ -8,11 +8,11 @@ model_a=load_model("keras_model.h5", compile=False)  # mouth
 
 st.set_page_config(page_title='Drowsiness Detection',page_icon= 'https://i.pinimg.com/originals/0a/1f/f1/0a1ff1e3e1ffd7750aec75d572429b00.jpg')
 st.title('WELCOME TO DROWSINESS DETECTION 😴⚠🔊')
-choice=st.sidebar.selectbox('Dashboard',('Home','IP Camera','Upload file or link'))
+choice=st.sidebar.selectbox('Dashboard',('Home','Web Camera','Upload file or link'))
 st.sidebar.image('https://clipart-library.com/newhp/139-1395363_49-truck-driver-male-asian-clipart-female-truck.png')
 if(choice=='Home'):
     st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-f_zzNu1uEFoZP8ejwjABpsRrQ4QvcnL_w&usqp=CAU')   
-elif(choice=='IP Camera'):    
+elif(choice=='Web Camera'):    
     a=st.text_input('Enter the WebCam link') # since, 0 is for camera, input is taken in number format..thats why, st.number_input and not ss text_input.
     window=st.empty()
     b=st.button('Start')
