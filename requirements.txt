@@ -3,4 +3,3 @@ streamlit
 tensorflow
 keras
 numpy
-camera_input_live
