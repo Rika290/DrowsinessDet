@@ -1,6 +1,2 @@
 streamlit
-opencv
-numpy 
-keras
-tensorflow
 time
