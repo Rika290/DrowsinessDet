@@ -20,7 +20,7 @@ elif(choice=='Camera'):
     window=st.empty()
     #b=st.button('Start')
     if pic:
-        v=cv2.VideoCapture(pic) # as a is 0 here, int(a) is taken.. 
+        v=cv2.VideoCapture() # as a is 0 here, int(a) is taken.. 
         f_cas=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         e_cas=cv2.CascadeClassifier('haarcascade_eye.xml')
         m_cas=cv2.CascadeClassifier('mouth.xml')
