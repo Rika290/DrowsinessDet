@@ -2,7 +2,6 @@ import cv2
 import time
 import numpy as np
 import streamlit as st
-from camera_input_live import camera_input_live
 from keras.models import load_model
 model = load_model("keras_model_1.h5", compile=False) # eyes
 model_a=load_model("keras_model.h5", compile=False)  # mouth
