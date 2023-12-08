@@ -15,7 +15,7 @@ if(choice=='Home'):
 elif(choice=='IP Camera'):    
     a=st.text_input('Enter the WebCam link') # since, 0 is for camera, input is taken in number format..thats why, st.number_input and not ss text_input.
     window=st.empty()
-    b=st.button('Upload a video')
+    b=st.button('Start')
     if b:
         v=cv2.VideoCapture(a) # as a is 0 here, int(a) is taken.. 
         f_cas=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -115,7 +115,7 @@ elif(choice=='IP Camera'):
 else:    
     a=st.text_input('Enter link or path of the video file') # since, 0 is for camera, input is taken in number format..thats why, st.number_input and not ss text_input.
     window=st.empty()
-    b=st.button('Upload a video')
+    b=st.button('Okay')
     if b:
         v=cv2.VideoCapture(a) # as a is 0 here, int(a) is taken.. 
         f_cas=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
