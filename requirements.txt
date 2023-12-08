@@ -2,5 +2,3 @@ opencv-python-headless
 streamlit 
 tensorflow
 time
-camera_input_live
-numpy
