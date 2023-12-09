@@ -13,11 +13,11 @@ st.sidebar.image('https://clipart-library.com/newhp/139-1395363_49-truck-driver-
 if(choice=='Home'):
     st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-f_zzNu1uEFoZP8ejwjABpsRrQ4QvcnL_w&usqp=CAU')   
 elif(choice=='Web Camera'):    
-    a=st.text_input('Enter the WebCam link') # since, 0 is for camera, input is taken in number format..thats why, st.number_input and not ss text_input.
+    a=st.text_input('Enter the WebCam link')
     window=st.empty()
     b=st.button('Start')
     if b:
-        v=cv2.VideoCapture(a) # as a is 0 here, int(a) is taken.. 
+        v=cv2.VideoCapture(a) 
         f_cas=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         e_cas=cv2.CascadeClassifier('haarcascade_eye.xml')
         m_cas=cv2.CascadeClassifier('mouth.xml')
